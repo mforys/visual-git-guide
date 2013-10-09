@@ -12,13 +12,14 @@
   <div id="language-box">
     <a>Inne języki:</a>
     <ul>
+      <li><a href='index-de.html'>Angielski</a></li>
       <li><a href='index-de.html'>Niemiecki</a></li>
-      <li class="selected">Angielski</li>
       <li><a href='index-es.html'>Hiszpański</a></li>
       <li><a href='index-fr.html'>Francuski</a></li>
       <li><a href='index-it.html'>Italiano</a></li>
       <li><a href='index-ja.html'>Japoński</a></li>
       <li><a href='index-ko.html'>Koreański</a></li>
+      <li class="selected">Polski</li>
       <li><a href='index-ru.html'>Rosyjski</a></li>
       <li><a href='index-sk.html'>Słowacki</a></li>
       <li><a href='index-vi.html'>Wietnamski</a></li>
@@ -34,9 +35,7 @@
 
   <p>Ta strona jest krótkim, wizualnym wprowadzeniem do najważniejszych komend Git-a.  
   Jeżeli już wiesz co nieco o Gicie, może utrwalić podstawy i pomóc bardziej zrozumieć ten program.  
-  Aby zobaczyc jak ten tutorial powstawał, zobacz 
-  moje <a href='http://github.com/MarkLodato/visual-git-guide'>repozytorium GitHub
-    </a>.</p>
+  Aby poznać historię powstania tego tutoriala, zobacz <a href='http://github.com/MarkLodato/visual-git-guide'>moje repozytorium GitHuba</a>.</p>
 
   <h2 id="contents">Spis treści</h2>
   <ol>
@@ -54,28 +53,24 @@
         <li><a href="#rebase">Rebase</a></li>
       </ol>
     </li>
-    <li><a href="#technical-notes">Uwagi techniczne
+    <li><a href="#technical-notes">Uwagi techniczne</a></li>
   </ol>
 
   <h2 id="basic-usage">Podstawy</h2>
 
   <div class="center"><img src='basic-usage.svg.png'></div>
 
-  <p>The four commands above copy files between the working directory, the
-  stage (also called the index), and the history (in the form of commits).</p>
+  <p>Cztery komendy powyżej kopiują pliki pomiędzy roboczym katalogiem, warstwą pośrednią (eng. stage) (zwaną takze index-em) i historią (w formie komitów).</p>
 
   <ul>
 
-    <li><code>git add <em>files</em></code> copies <em>files</em> (at their
-    current state) to the stage.</li>
+    <li><code>git add <em>pliki</em></code> kopiuje <em>pliki</em> () do warstwy pośredniej.</li>
 
-    <li><code>git commit</code> saves a snapshot of the stage as a
-    commit.</li>
+    <li><code>git commit</code> kopiuje pliki z warstwy pośredniej do finalnej.</li>
 
-    <li><code>git reset -- <em>files</em></code> unstages files; that is, it
-    copies <em>files</em> from the latest commit to the stage.  Use this
-    command to "undo" a <code>git add <em>files</em></code>.  You can also
-    <code>git reset</code> to unstage everything.</li>
+    <li><code>git reset -- <em>files</em></code> kopiuje <em>files</em> z ostatniego komita do warstwy pośredniej.  
+    Jest to operacja odwrotna do <code>git add <em>files</em></code>. 
+    Wykonanie <code>git reset</code> czyści całą wartwe pośrednią.</li>
 
     <li><code>git checkout -- <em>files</em></code> copies <em>files</em> from 
     the stage to the working directory.  Use this to throw away local
